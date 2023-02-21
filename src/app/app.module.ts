@@ -4,11 +4,12 @@ import { AppComponent } from './app.component';
 import { ModuloHeroes } from './Heroes/Heroe.module';
 /**Tarea de Crear el modulo de contador e importalo */
 import { ModuloContador } from './Contador/Contador.module';
+import { ModuloLol } from './lol/lol.module';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, ModuloHeroes, ModuloContador],
   providers: [],
   bootstrap: [AppComponent],
+  imports: [BrowserModule,ModuloLol, ModuloHeroes, ModuloContador ],
 })
 export class AppModule {}
